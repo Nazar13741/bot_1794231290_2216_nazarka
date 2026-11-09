@@ -1,0 +1,22 @@
+{
+  "name": "grimoire-bot",
+  "version": "1.0.0",
+  "description": "Discord-бот.",
+  "main": "src/index.js",
+  "private": true,
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "deploy": "node src/deploy-commands.js",
+    "preview": "node scripts/preview-card.js",
+    "assets": "node scripts/make-assets.js",
+    "db": "node scripts/db.js"
+  },
+  "engines": {
+    "node": ">=22.13"
+  },
+  "dependencies": {
+    "@napi-rs/canvas": "^1.0.13",
+    "discord.js": "^14.27.0"
+  }
+}
